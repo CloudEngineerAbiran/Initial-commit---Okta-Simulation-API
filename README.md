@@ -208,3 +208,50 @@ This project is licensed under the **MIT License**.
 Feel free to fork this repository and submit pull requests! 😊
 
 
+
+
+Project Overview
+This project is a Flask-based Okta Simulation API that allows user provisioning and deprovisioning. It simulates basic authentication and user management functionalities similar to Okta. The API supports creating users, deleting users, and retrieving API status.
+
+What We Have Done
+Project Structure Setup: Organized files into app.py, models.py, config.py, and separate route files.
+
+Database Integration: Used Flask-SQLAlchemy to manage user data.
+
+Blueprint Implementation: Created user_routes.py for handling API endpoints.
+
+Flask Application Initialization: Defined create_app() to initialize Flask and register routes.
+
+Debugging & Deployment: Resolved issues like circular imports, port accessibility, and binding errors.
+
+Usage & Necessity
+Why is this Needed?
+
+Helps developers simulate Okta-like user management without needing an actual Okta setup.
+
+Useful for testing authentication workflows before integrating with a real identity provider.
+
+Acts as a lightweight local alternative for managing users in a secure and structured manner.
+
+How to Use It?
+
+Run the Flask app:
+
+bash
+Copy
+Edit
+python3 app.py
+Access API in a browser at:
+
+cpp
+Copy
+Edit
+http://127.0.0.1:5000/
+API Endpoints:
+
+GET / → Check if the API is running.
+
+POST /users → Create a new user.
+
+DELETE /users/<id> → Delete a user.
+
